@@ -80,16 +80,16 @@ public class AddToDoActivity extends AppCompatActivity implements  DatePickerDia
         ImageButton reminderIconImageButton;
         TextView reminderRemindMeTextView;
 
-//        ShineButton shineButtonJava = new ShineButton(this);
-//        shineButtonJava.setBtnColor(Color.GRAY);
-//        shineButtonJava.setBtnFillColor(Color.RED);
-//        shineButtonJava.setShapeResource(R.raw.heart);
-//        shineButtonJava.setAllowRandomColor(true);
-//        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(100, 100);
-//        shineButtonJava.setLayoutParams(layoutParams);
-//        if (linearLayout != null) {
-//            linearLayout.addView(shineButtonJava);
-//        }
+        ShineButton shineButtonJava = new ShineButton(this);
+        shineButtonJava.setBtnColor(Color.GRAY);
+        shineButtonJava.setBtnFillColor(Color.RED);
+        shineButtonJava.setShapeResource(R.raw.heart);
+        shineButtonJava.setAllowRandomColor(true);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(100, 100);
+        shineButtonJava.setLayoutParams(layoutParams);
+        if (linearLayout != null) {
+            linearLayout.addView(shineButtonJava);
+        }
 
         theme = getSharedPreferences(MainActivity.THEME_PREFERENCES, MODE_PRIVATE).getString(MainActivity.THEME_SAVED, MainActivity.LIGHTTHEME);
         if(theme.equals(MainActivity.LIGHTTHEME)){
